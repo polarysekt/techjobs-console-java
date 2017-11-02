@@ -114,6 +114,7 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
         if( someJobs.size() == 0 ) {
+            System.out.println("*****");
             System.out.println( "No data to display.");
         } else {
 
@@ -123,8 +124,9 @@ public class TechJobs {
                     System.out.printf("%s : %s\n", entry.getKey(), entry.getValue());
                 }
             }
-            System.out.println("*****");
+
         }
+        System.out.println("*****");
     }
 
 }

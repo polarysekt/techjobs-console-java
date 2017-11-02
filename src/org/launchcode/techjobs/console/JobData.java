@@ -60,14 +60,12 @@ public class JobData {
         loadData();
 
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
-
-        //System.out.println( "TEST contains");
+        String strValue = value.toUpperCase();
 
         for (HashMap<String, String> row : allJobs) {
-            //System.out.println( row );
             for (HashMap.Entry<String, String> entry : row.entrySet()) {
-                if( entry.getValue().contains( value ) ) {
-                    //System.out.println( entry.getValue() );
+                String strEntry = entry.getValue().toUpperCase();
+                if( strEntry.contains( strValue ) ) {
                     jobs.add( row );
                     break;
                 }
@@ -92,14 +90,15 @@ public class JobData {
 
         // load data, if not already loaded
         loadData();
+        String strValue = value.toUpperCase();
 
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
 
         for (HashMap<String, String> row : allJobs) {
 
-            String aValue = row.get(column);
+            String aValue = row.get(column).toUpperCase();
 
-            if (aValue.contains(value)) {
+            if (aValue.contains(strValue)) {
                 jobs.add(row);
             }
         }
