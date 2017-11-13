@@ -1,0 +1,51 @@
+* CORE
+
+** IMPLEMENT printJobs
+
+*** List All - Print Records in boxes
+___
+
+*** Test for 0 records case.
+___
+OUTPUT:
+*****
+No data to display.
+*****
+___
+
+** IMPLEMENT findByValue
+
+Search term: 
+Jav
+___
+OUTPUT:
+
+*****
+position type : Web - Full Stack
+name : Junior Developer 3
+employer : LiveAnswer
+location : South Florida
+core competency : Java
+*****
+!!!...etc...!!!
+*****
+position type : Web - Full Stack
+name : Software Developer (Data Team)
+employer : Redfin
+location : Seattle
+core competency : Java
+*****
+___
+
+*** Check for (avoid) duplicates
+
+*** Do not depend on columns
+
+** IMPLEMENT case-insensitive search
+
+
+* EXTRA
+
+** Sort List Results
+
+** Return copy of data
